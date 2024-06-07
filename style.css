@@ -1,14 +1,17 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Khand:wght@300;400;500;600;700&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+ 
 html {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
+ 
 a {
     text-decoration: none;
 }
@@ -42,7 +45,7 @@ p {
     text-align: center;
 }
 .section-title span {
-    color: rgb(7, 0, 132);
+    color: #38B6FF;
 }
  
 .cta {
@@ -50,7 +53,7 @@ p {
     padding: 10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid rgb(7, 0, 132);
+    border: 2px solid #38B6FF;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -60,7 +63,7 @@ p {
 }
 .cta:hover {
     color: white;
-    background-color: rgb(7, 0, 132);
+    background-color: #38B6FF;
 }
 .brand h1 {
     font-size: 3rem;
@@ -68,9 +71,9 @@ p {
     color: white;
 }
 .brand h1 span {
-    color: rgb(7, 0, 132);
+    color: #38B6FF;
 }
-
+ 
 /* Header section */
 #header {
     position: fixed;
@@ -114,14 +117,17 @@ p {
     left: 0%;
 }
 #header .nav-list ul a {
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 3.5rem;
+    font-weight: 600;
     letter-spacing: 0.2rem;
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding: 20px;
     display: block;
+    font-family: "Khand", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 #header .nav-list ul a::after {
     content: attr(data-after);
@@ -140,7 +146,7 @@ p {
     letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-    color: rgb(7, 0, 132);
+    color: #38B6FF;
 }
 #header .hamburger {
     height: 60px;
@@ -197,7 +203,7 @@ p {
     top: 0;
 }
 /* End Header section */
-
+ 
 /* Hero Section */
 #hero {
     background-image: url(./img/oceano2.jpg);
@@ -248,7 +254,7 @@ p {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: rgb(7, 0, 132);
+    background-color: #38B6FF;
     animation: text_reveal_box 1s ease;
     animation-delay: 0.5s;
 }
@@ -263,7 +269,7 @@ p {
 }
  
 /* End Hero Section */
-
+ 
 /* Problems Section */
 #problems .problems {
     flex-direction: column;
@@ -273,7 +279,7 @@ p {
     padding: 100px 0;
 }
 #problems .problems-top h1 {
-    color: rgb(196, 0, 0);
+    color: #ff0054;
 }
  
 #problems .problems-top {
@@ -323,7 +329,7 @@ p {
 }
 #problems .problems-item h2 {
     font-size: 2rem;
-    color: rgb(196, 0, 0);
+    color: #ff0054;
     margin-bottom: 10px;
     text-transform: uppercase;
     display: block;
@@ -335,7 +341,7 @@ p {
     text-align: left;
 }
 /* End Problems Section */
-
+ 
 /* Services Section */
 #services .services {
     flex-direction: column;
@@ -509,7 +515,7 @@ p {
     text-align: left;
 }
 /* End Services Section */
-
+ 
 /* Proposes section */
 #proposes .proposes {
     flex-direction: column;
@@ -548,13 +554,13 @@ p {
     color: white;
 }
 #proposes .proposes-info h1 {
-    font-size: 4rem;
-    font-weight: 500;
-    padding-bottom: 3%;
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 5%;
 }
 #proposes .proposes-info h2 {
-    font-size: 1.8rem;
-    font-weight: 500;
+    font-size: 1.0rem;
+    font-weight: 300;
 }
 #proposes .proposes-info p {
     color: white;
@@ -582,7 +588,7 @@ p {
     transform: scale(1.1);
 }
 /* End Proposes section */
-
+ 
 /* About Section */
 #about .about {
     flex-direction: column-reverse;
@@ -626,12 +632,12 @@ p {
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid rgb(7, 0, 132);
+    border: 7px solid #38b6ff;
     z-index: -1;
 }
 /* End About Section */
-
-
+ 
+ 
 /* contact Section */
 #contact .contact {
     flex-direction: column;
@@ -640,9 +646,11 @@ p {
     margin-bottom: 5%;
     width: 90%;
 }
+#contact .section-title{
+    margin-bottom: 15%;
+}
 #contact .contact-items {
-    /* max-width: 400px; */
-    width: 100%;
+    max-width: 800px;
 }
 #contact .contact-item {
     width: 80%;
@@ -651,7 +659,7 @@ p {
     border-radius: 10px;
     padding: 30px;
     margin: 30px;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -661,24 +669,44 @@ p {
 #contact .contact-item:hover {
     box-shadow: 0px 0px 5px 0 #0000002c;
 }
-#contact .icon {
-    width: 70px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
 #contact .contact-info h1 {
     font-size: 2.5rem;
     font-weight: 500;
-    margin-bottom: 5px;
 }
 #contact .contact-info h2 {
-    font-size: 1.3rem;
-    line-height: 2rem;
+    font-size: 2.0rem;
+    line-height: 1.0rem;
     font-weight: 500;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding-top: 5%;
+    padding: 2%;
+ 
+}
+#contact .contact-info p {
+    font-size: 2.0rem;
+    line-height: 1.0rem;
+    font-weight: 300;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding-top: 5%;
+    padding: 2%;
+}
+
+#contact .contact-info img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-bottom: 10%;
 }
 /*End contact Section */
-
-
+ 
+ 
 /* Footer */
 #footer {
     background-color: #000;
@@ -718,7 +746,7 @@ p {
     font-size: 1.3rem;
 }
 /* End Footer */
-
+ 
 /* Keyframes */
 @keyframes hamburger_puls {
     0% {
@@ -747,12 +775,12 @@ p {
 }
 @keyframes text_reveal_name {
     100% {
-        color: rgb(7, 0, 132);
+        color: #38b6ff;
         font-weight: 500;
     }
 }
 /* End Keyframes */
-
+ 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
     .cta {
@@ -762,7 +790,7 @@ p {
     h1.section-title {
         font-size: 6rem;
     }
-
+ 
 /* Hero */
     #hero h1 {
         font-size: 7rem;
@@ -801,7 +829,7 @@ p {
         height: 100%;
     }
     /* End Project */
-
+ 
     /* About */
     #about .about {
         flex-direction: row;
@@ -816,7 +844,7 @@ p {
         top: 34px;
         height: 98%;
         width: 98%;
-        border: 10px solid rgb(7, 0, 132);
+        border: 10px solid #38b6ff;
     }
     #about .col-right {
         text-align: left;
@@ -826,7 +854,7 @@ p {
         text-align: left;
     }
     /* End About */
-
+ 
     /* contact  */
     #contact .contact {
         flex-direction: column;
@@ -858,10 +886,19 @@ p {
         text-align: left;
         padding-left: 20px;
     }
+    #contact .contact-info img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 5%;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
     /* End contact  */
 }
 /* End Media Query For Tablet */
-
+ 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
     /* header */
@@ -890,8 +927,7 @@ p {
         margin: 1.5%;
     }
 }
-
+ 
 /* End  Media Query For Desktop */
-
-
-
+ 
+ 
