@@ -1,0 +1,854 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{
+    --cor-cabecalho: #024766;
+    --fonte-links: "Montserrat", sans-serif;
+    --fonte-textos: "Inter", sans-serif;
+    --fundo-main-1: #2E6E8C;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* cabeçalho */
+
+.cabecalho{
+    background-color: var(--cor-cabecalho);
+}
+
+.logo{
+    width: 7vw;
+}
+
+.titulo_logo{
+    display: flex;
+    align-items: center;
+}
+
+.titulo_cabecalho{
+    font-family: var(--fonte-links);
+    color: #ffffff;
+}
+
+.cabecalho_logo_links{
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_links{
+    display: flex;
+}
+
+.links{
+    display: flex;
+    text-decoration: none;
+}
+
+.primeiro_link{
+    margin-left: 38vw;
+} 
+
+.segundo_link{
+    margin-left: 5vw;
+}
+
+.terceiro_link{
+    margin-left: 5vw;
+}
+
+.quarto_link{
+    margin-left: 5vw;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: var(--fonte-links);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    property: transform;
+}
+
+a:hover{
+    transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Primeira Parte Main */
+
+.main_primeira_parte{
+    background-color: var(--fundo-main-1);
+}
+
+.main_primeira_titulo{
+    font-family: var(--fonte-textos);
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.main_primeira_subtitulo{
+    font-family: var(--fonte-textos);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.main_primeira_textos{
+    font-family: var(--fonte-textos);
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.textos_poluição_marinha{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.poluicao_marinha{
+    width: 40vw;
+}
+
+.imagem_textos_impacto{
+    display: flex;
+    align-items: center;
+    margin: 5% 0% 0% 5%;
+    padding-bottom: 2rem;
+
+}
+
+.main_primeira_imagem{
+    width: 40vw;
+    border: solid 3px var(--cor-cabecalho);
+}
+
+.textos_impacto{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin-left: 5rem;
+}
+
+/* Segunda Parte Main */
+
+.main_segunda_parte{
+    background-color: #ffffff;
+    padding-bottom: 5%;
+}
+
+.titulo_segunda{
+    font-family: var(--fonte-textos);
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-left: 5%;
+    display: flex;
+}
+
+.tipos_poluição{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.titulo_tipos{
+    font-family: var(--fonte-textos);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.textos_tipos{
+    font-family: var(--fonte-textos);
+    font-weight: normal;
+    font-size: 1.2rem;
+    width: 35vw;
+    text-align: justify;
+    margin-left: 1rem;
+}
+
+.imagem_texto{
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.tipos_3_4{
+    margin-left: 5%;
+}
+
+.titulo_quimica{
+    margin-top: 40%;
+}
+
+.imagem_quimica{
+    width: 5.5vw;
+}
+
+.titulo_esgoto{
+    margin-top: 40%;
+}
+
+/* Terceira Parte Main */
+
+.main_terceira_parte{
+    background-color: var(--cor-cabecalho);
+}
+
+.titulo_terceira{
+    font-family: var(--fonte-textos);
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 3rem;
+    margin: 0 0 2rem 5%;
+    padding-top: 2rem;
+}
+
+.oceano_interativo{
+    background-image: url(../img/oceano-720px.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* padding: 20vw; */
+}
+
+.bolinha{
+    border: 3px solid black;
+    border-radius: 10rem;
+    background-color: var(--cor-cabecalho);
+    color: #ffffff;
+    font-family: var(--fonte-textos);
+    font-size: 2.5rem;
+    padding: 2rem 3rem;
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.bolinha:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.bolinha_1{
+    margin-left: 10%;
+    margin-top: 28%;
+}
+
+.bolinha_2{
+    margin-left: 79%;
+    margin-top: 2%;
+}
+
+.bolinha_3{
+    margin-left: 18%;
+    margin-top: 2%;
+}
+
+.bolinha_4{
+    margin-left: 70%;
+    margin-top: 1%;
+    margin-bottom: 2rem;
+}
+
+.conteudo{
+    background-color: var(--fundo-main-1);
+    
+}
+
+.conteudo_imagem{
+    display: flex;
+}
+
+.titulo_conteudo{
+    font-family: var(--fonte-textos);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.texto_conteudo{
+    font-family: var(--fonte-textos);
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 2rem;
+    /* text-align: justify; */
+    width: 40vw;
+    margin-left: 2rem;
+}
+
+.conteudo_4{
+    padding-bottom: 2rem;
+}
+
+.imagem_conteudo{
+    margin: 0 2rem 2rem 2rem;
+    border: 5px solid var(--cor-cabecalho);
+    border-radius: 10px;
+}
+
+dialog{
+    overflow: hidden;
+    border: 3px solid var(--cor-cabecalho);
+    width: 70%;
+    margin: auto;
+    background-color: var(--fundo-main-1);
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.closeModal{
+    border: none;
+    background-color: var(--fundo-main-1);
+    color: #ffffff;
+    font-family: var(--fonte-textos);
+    font-size: 1.2rem;
+    margin-left: 96%;
+    margin-top: 2%;
+}
+
+/* Quarta Parte Main */
+
+.main_projeto{
+    background-color: #08212c;
+    color: #ffffff;
+}
+
+.titulo_projeto{
+    font-weight: bolder;
+    font-size: 3rem;
+    margin: 0 0 2rem 5%;
+    padding-top: 2rem;
+    font-family: var(--fonte-textos);
+}
+
+.texto_projeto{
+    margin: 0 0 2rem 5%;
+    padding-top: 2rem;
+    font-family: var(--fonte-textos);
+    font-size: 1.5rem;
+    width: 40vw;
+    margin-bottom: 5%;
+}
+
+.imagem_nome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem_projeto{
+    width: 25vw;
+}
+
+.nome_projeto{
+    font-family: var(--fonte-links);
+    color: #ffffff;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+.saber_mais{
+    color: #3999da;
+}
+
+/* rodapé */
+
+.rodape{
+    background-color: var(--cor-cabecalho);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+
+.copyright{
+    font-family: var(--fonte-textos);
+    color: #ffffff;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+@media (max-width: 1440px){
+    .primeiro_link{
+        margin-left: 30vw;
+    } 
+
+    .imagem_garrafa{
+        height: 10vh;
+    }
+
+    .imagem_quimica{
+        height: 10vh;
+    }
+
+    .imagem_petroleo{
+        height: 10vh;
+    }
+
+    .imagem_esgoto{
+        height: 10vh;
+    }
+
+    .titulo_esgoto{
+        margin-top: 35%;
+    }
+
+    .titulo_conteudo{
+        font-size: 2rem;
+    }
+    
+    .texto_conteudo{
+        font-size: 1.5rem;
+    }
+
+    .imagem_conteudo{
+        width: 30vw;
+    }
+
+}
+
+@media (max-width: 1024px){
+    .primeiro_link{
+        margin-left: 10vw;
+    }
+
+    .tipos_3_4{
+        margin-left: 3%;
+    }
+
+    .titulo_esgoto{
+        margin-top: 34%;
+    }
+
+    .texto_conteudo{
+        font-size: 1.2rem;
+    }
+
+    .imagem_conteudo{
+        width: 35vw;
+    }
+
+    .imagem_quimica{
+        height: 10vh;
+        width: 8vw;
+    }
+
+    .nome_projeto{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 840px){
+    a{
+        font-size: 0.8rem;
+    }
+
+    .primeiro_link{
+        margin-left: 12vw;
+    }
+
+    .titulo_cabecalho{
+        font-size: 1.5rem;
+    }
+
+    .main_primeira_textos{
+        font-size: 1rem;
+    }
+
+    .imagem_garrafa{
+        width: 10vw;
+    }
+    
+    .titulo_segunda{
+        margin-left: 2%;
+    }
+
+    .tipos_poluição{
+        margin-left: 2%;
+    }
+
+    .textos_tipos{
+        font-size: 0.9rem;
+        width: 30vw;
+    }
+
+    .tipos_3_4{
+        margin-left: 10%;
+    }
+
+    .titulo_esgoto{
+        margin-top: 30%;
+    }
+
+    .bolinha{
+        font-size: 2.5rem;
+        padding: 1rem 2rem;
+    }
+
+    .texto_conteudo{
+        font-size: 1rem;
+        padding-bottom: 2%;
+    }
+
+    .imagem_conteudo{
+        width: 35vw;
+    }
+
+    .integrantes{
+        font-size: 1rem;
+    }
+
+    .texto_projeto{
+        width: 60vw;
+    }
+
+    .saber_mais{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 750px){
+    a{
+        font-size: 0.7rem;
+    }
+
+    .primeiro_link{
+        margin-left: 12vw;
+    }
+
+    .titulo_cabecalho{
+        font-size: 1.2rem;
+    }
+
+    .main_primeira_titulo{
+        font-size: 2.5rem;
+    }
+
+    .main_primeira_imagem{
+        width: 45vw;
+    }
+
+    .textos_impacto{
+        margin-left: 2.2rem;
+    }
+
+    .titulo_segunda{
+        font-size: 2.5rem;
+    }
+
+    .tipos_3_4{
+        margin-left: 8%;
+    }
+
+    .titulo_esgoto{
+        margin-top: 28%;
+    }
+
+    .imagem_quimica{
+        width: 10vw;
+    }
+
+    .titulo_terceira{
+        font-size: 2.5rem;
+    }
+
+    .texto_conteudo{
+        font-size: 1rem;
+        padding-bottom: 3%;
+    }
+
+    .imagem_conteudo{
+        width: 30vw;
+    }
+
+    .texto_projeto{
+        width: 70vw;
+    }
+
+}
+
+@media (max-width: 430px){
+    .cabecalho_logo_links{
+        display: initial;
+    }
+
+    .titulo_logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo{
+        width: 15vw;
+    }
+    
+    a{
+        font-size: 0.65rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .primeiro_link{
+        margin-left: 2vw;
+    }
+
+    .cabecalho_links{
+        justify-content: center;
+    }
+
+    .titulo_cabecalho{
+        font-size: 1.2rem;
+    }
+
+    .main_primeira_titulo{
+        font-size: 2rem;
+    }
+
+    .main_primeira_subtitulo{
+        font-size: 1rem;
+    }
+
+    .main_primeira_textos{
+        font-size: 0.8rem;
+    }
+
+    .main_primeira_imagem{
+        width: 40vw;
+    }
+
+    .textos_impacto{
+        margin-left: 2rem;
+    }
+
+    .titulo_segunda{
+        font-size: 2rem;
+    }
+
+    .tipos_poluição{
+        display: initial;
+    }
+
+    .titulo_esgoto{
+        margin-top: 10%;
+    }
+
+    .textos_tipos{
+        width: 60vw;
+    }
+
+    .tipos_poluição{
+        display: initial;
+    }
+
+    .tipos_1_2{
+        margin-left: 12%;
+    }
+
+    .tipos_3_4{
+        margin-left: 12%;
+    }
+
+    .titulo_plasticos{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    .titulo_quimica{
+        margin-top: 15%;
+        margin-left: 16%;
+    }
+
+    .titulo_petroleo{
+        margin-top: 15%;
+        margin-left: 10%;
+    }
+
+    .titulo_esgoto{
+        margin-top: 15%;
+        margin-left: 10%;
+    }
+
+    .imagem_garrafa{
+        width: 9vw;
+        height: 5vh;
+    }
+
+    .imagem_quimica{
+        width: 9vw;
+        height: 5vh;
+    }
+
+    .imagem_petroleo{
+        width: 9vw;
+        height: 5vh;
+    }
+
+    .imagem_esgoto{
+        width: 9vw;
+        height: 5vh;
+    }
+
+
+
+
+
+
+
+    .titulo_terceira{
+        font-size: 2rem;
+    }
+
+    .bolinha{
+        font-size: 2rem;
+        padding: 0.7rem 1.4rem;
+    }
+
+    .bolinha_1{
+        margin-left: 10%;
+        margin-top: 55%;
+    }
+    
+    .bolinha_2{
+        margin-left: 79%;
+        margin-top: 10%;
+    }
+    
+    .bolinha_3{
+        margin-left: 18%;
+        margin-top: 10%;
+    }
+    
+    .bolinha_4{
+        margin-left: 70%;
+        margin-top: 10%;
+        margin-bottom: 0rem;
+    }
+
+    .conteudo_imagem{
+        display: initial;
+    }
+    
+    .titulo_conteudo{
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .texto_conteudo{
+        font-size: 1rem;
+        width: auto;
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+        margin-right: 2%;
+    }
+    
+    .conteudo_4{
+        padding-bottom: 2rem;
+    }
+    
+    .imagem_conteudo{
+        border: 3px solid var(--cor-cabecalho);
+        border-radius: 10px;
+        width: 50vw;
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+       
+    .closeModal{
+        font-size: 1rem;
+        margin-left: 95%;
+        margin-top: 2%;
+    }
+
+    .bolinha_4{
+        margin-bottom: 5%;
+    }
+
+    .integrantes{
+        font-size: 0.8rem;
+    }
+
+    .copyright{
+        font-size: 0.7rem;
+    }
+
+    .titulo_projeto{
+        font-size: 2rem;
+    }
+
+    .texto_projeto{
+        font-size: 1.2rem;
+        width: 80vw;
+    }
+
+    .saber_mais{
+        font-size: 1.2rem;
+    }
+
+    .imagem_nome{
+        margin-top: 10%;
+    }
+
+    .imagem_projeto{
+        width: 40vw;
+    }
+    
+}
+
+@media (max-width: 420px){
+    .titulo_esgoto{
+        margin-top: 10%;
+    }
+
+    .textos_tipos{
+        width: 60vw;
+    }
+
+    .tipos_poluição{
+        display: initial;
+    }
+
+    .tipos_1_2{
+        margin-left: 10%;
+    }
+
+    .tipos_3_4{
+        margin-left: 10%;
+    }
+
+    .titulo_plasticos{
+        margin-top: 10%;
+    }
+
+    .titulo_quimica{
+        margin-top: 10%;
+        margin-left: 14%;
+    }
+
+    .titulo_petroleo{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .titulo_esgoto{
+        margin-left: 10%;
+    }
+
+    
+
+}
+
+
+

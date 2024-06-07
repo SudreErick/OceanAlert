@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Solution</title>
+    
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js" defer></script>
+    <link rel="shortcut icon" href="img/logo-gs.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho_logo_links">
+            <div class="titulo_logo">
+                <img src="img/logo-gs.png" alt="Logo de um símbolo de reciclagem atrás do planeta Terra" class="logo">
+                <h1 class="titulo_cabecalho">OceanAlert</h1>
+            </div>
+            <ul class="cabecalho_links">
+                <li class="primeiro_link"><a href="pagina-inicial.html" class="links">Página Inicial</a></li>
+                <li class="segundo_link"><a href="paginas/informações.html" class="links">Seção de Informações</a></li>
+                <li class="terceiro_link"><a href="paginas/dicas.html" class="links">Dicas e Ações</a></li>
+                <li class="quarto_link"><a href="paginas/simulador.html" class="links">Simulador </a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="main_primeira_parte">
+            <div class="textos_poluição_marinha">
+                <h1 class="main_primeira_titulo">Poluição Marinha</h1>
+                <h2 class="main_primeira_subtitulo">O que é Poluição Marinha?</h2>
+                <p class="main_primeira_textos poluicao_marinha">A poluição marinha é a contaminação dos oceanos e mares por substâncias nocivas, como plásticos, produtos químicos, óleo e resíduos domésticos. Esses poluentes entram no ambiente marinho de diversas fontes, incluindo atividades terrestres e marítimas, prejudicando a vida marinha e a saúde dos ecossistemas.</p>
+            </div>
+            <div class="imagem_textos_impacto">
+                <img src="img/garrafa-pet-oceano-600px.jpg" alt="Imagem de uma sacola jogada no meio do mar" class="main_primeira_imagem">
+                <div class="textos_impacto">
+                    <h2 class="main_primeira_subtitulo">Impacto nos Ecossistemas</h2>
+                    <p class="main_primeira_textos">Os oceanos são vitais para a vida na Terra, proporcionando habitat para milhões de espécies e regulando o clima global. A poluição marinha ameaça esses ecossistemas delicados, causando danos irreversíveis à fauna e flora marinhas. Espécies marinhas ingerem plásticos e outros resíduos, resultando em mortes e desequilíbrios ecológicos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_segunda_parte">
+            <h1 class="titulo_segunda">Tipos de Poluição Marinha</h1>
+            <div class="tipos_poluição">
+                <div class="tipos_1_2">
+                    <div class="plasticos">
+                        <h2 class="titulo_tipos titulo_plasticos">1. Poluição por Plásticos</h2>
+                        <div class="imagem_texto">
+                            <img src="img/garrafa-pet-100.png" alt="icone de uma garrafa pet" class="imagem_garrafa">
+                            <p class="textos_tipos">Plásticos são um dos maiores poluentes dos oceanos. Garrafas, sacolas, redes de pesca e microplásticos entram nos mares e são ingeridos por animais marinhos, causando mortes e contaminando a cadeia alimentar.</p>
+                        </div>
+                    </div>
+                    <div class="quimica">
+                        <h2 class="titulo_tipos titulo_quimica">2. Poluição Química</h2>
+                        <div class="imagem_texto">
+                            <img src="img/veneno-90.png" alt="icone de uma caveira" class="imagem_quimica">
+                            <p class="textos_tipos">Substâncias químicas provenientes de indústrias, agricultura e esgoto doméstico entram nos oceanos e causam graves danos à vida marinha. Metais pesados, pesticidas e fertilizantes são exemplos de poluentes químicos que podem levar à morte de espécies e à degradação dos habitats marinhos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tipos_3_4">
+                    <div class="petroleo">
+                        <h2 class="titulo_tipos titulo_petroleo">3. Poluição por Petróleo</h2>
+                        <div class="imagem_texto">
+                            <img src="img/petroleo-100.png" alt="icone de um galão de gasolina" class="imagem_petroleo">
+                            <p class="textos_tipos">Derramamentos de petróleo, tanto de navios como de plataformas de extração, liberam grandes quantidades de óleo no mar. Esse óleo forma uma camada na superfície da água, prejudicando a respiração de organismos marinhos e contaminando praias e manguezais.</p>
+                        </div>
+                    </div>
+                    <div class="esgoto">
+                        <h2 class="titulo_tipos titulo_esgoto">4. Poluição por Esgoto</h2>
+                        <div class="imagem_texto">
+                            <img src="img/esgoto-100.png" alt="icone de canos de esgoto" class="imagem_esgoto">
+                            <p class="textos_tipos">Esgoto não tratado e resíduos domésticos, como produtos de higiene e alimentos, são despejados nos oceanos através de rios e sistemas de esgoto. Esses resíduos poluem a água e podem causar surtos de doenças tanto em animais marinhos quanto em seres humanos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_terceira_parte">
+            <h1 class="titulo_terceira">Por que Devemos Ajudar os Oceanos?</h1>
+            <div class="oceano_interativo">
+                <div>
+                    <button id="openModal1" class="bolinha bolinha_1">1</button>
+                    <dialog id="Modal1">
+                        <button id="closeModal" class="closeModal"> X </button>
+                        <div class="conteudo">
+                            <h1 class="titulo_conteudo">1. Sustento da Vida Marinha</h1>
+                            <div class="conteudo_imagem">
+                                <p class="texto_conteudo">Os oceanos abrigam uma enorme diversidade de vida marinha, desde minúsculos fitoplânctons até grandes baleias. Manter os oceanos limpos e saudáveis é vital para preservar esses ecossistemas e garantir a sobrevivência das espécies marinhas, muitas das quais são fundamentais para o equilíbrio ecológico.</p>
+                                <img src="./img/vida-marinha.jpg" alt="imagem várias espécies de peixes e plantas" class="imagem_conteudo">
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div>
+                    <button id="openModal2" class="bolinha bolinha_2">2</button>
+                    <dialog id="Modal2">
+                        <button id="closeModal2" class="closeModal"> X </button>
+                        <div class="conteudo">
+                            <h1 class="titulo_conteudo">2.Regulação do Clima</h1>
+                            <div class="conteudo_imagem">
+                                <p class="texto_conteudo">Os oceanos desempenham um papel fundamental na regulação do clima da Terra. Eles absorvem grande parte do calor do sol e distribuem essa energia pelo planeta através das correntes oceânicas. Ajudar a preservar os oceanos contribui para a estabilidade climática e para a mitigação dos efeitos das mudanças climáticas.</p>
+                                <img src="./img/paisagem-720px.jpg" alt="imagem de uma paisagem com o sol nascendo" class="imagem_conteudo">
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div>
+                    <button id="openModal3" class="bolinha bolinha_3">3</button>
+                    <dialog id="Modal3">
+                        <button id="closeModal3" class="closeModal"> X </button>
+                        <div class="conteudo">
+                            <h1 class="titulo_conteudo">3. Bem-Estar e Lazer</h1>
+                            <div class="conteudo_imagem">
+                                <p class="texto_conteudo">Os oceanos proporcionam bem-estar e lazer para milhões de pessoas. Praias limpas e águas saudáveis são locais populares para atividades recreativas como natação, mergulho e surf. Conservar os oceanos garante que essas atividades possam ser desfrutadas pelas futuras gerações.</p>
+                                <img src="./img/praia-720px.jpg" alt="imagem de uma praia" class="imagem_conteudo">
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div>
+                    <button id="openModal4" class="bolinha bolinha_4">4</button>
+                    <dialog id="Modal4">
+                        <button id="closeModal4" class="closeModal"> X </button>
+                        <div class="conteudo">
+                            <h1 class="titulo_conteudo">4. Produção de Oxigênio</h1>
+                            <div class="conteudo_imagem">
+                                <p class="texto_conteudo conteudo_4">Os oceanos produzem mais da metade do oxigênio que respiramos. As algas marinhas e outros organismos fotossintetizantes desempenham um papel crucial na produção de oxigênio e na absorção de dióxido de carbono. Proteger os oceanos é essencial para garantir ar puro e uma atmosfera equilibrada.</p>
+                                <img src="./img/oxigenio-oceano-720px.jpg" alt="imagem de uma praia" class="imagem_conteudo">
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main_projeto">
+            <h1 class="titulo_projeto">Conheça nosso projeto</h1>
+            <p class="texto_projeto">O projeto OceanAlert é uma abordagem abrangente e inovadora para enfrentar os desafios da conservação marinha. Para conhecer mais sobre clique em <a href="#" class="saber_mais">saiba mais.</a></p>
+            <div class="imagem_nome">
+                <img src="./img/logo-gs-cortada.png" alt="Nossa logo" class="imagem_projeto">
+                <h2 class="nome_projeto">OceanAlert</h2>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+        <ul>
+            <li><a href="../paginas/integrantes.html" class="integrantes">Integrantes</a></li>
+        </ul>
+        <p class="copyright">&copy; 2024 OceanAlert. All rights reserved.</p>
+    </footer>
+</body>
+</html>
